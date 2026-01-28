@@ -1,0 +1,248 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background: #dcdcdc;
+  color: #222;
+}
+
+/* MAIN CONTAINER */
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  background: #f7f3ed;
+}
+
+/* LEFT PANEL */
+.left-panel{
+  width: 35%;
+  background: #5a5a5a;
+  color: #fff;
+  padding: 20px;
+}
+
+.profile-box{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+  border: 10px solid #f7f3ed;
+}
+
+.profile-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section{
+  margin-bottom: 20px;
+}
+
+.section h2{
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.section p{
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color: #f2f2f2;
+}
+
+.section ul{
+  margin-left: 20px;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* RIGHT PANEL */
+.right-panel{
+  width: 65%;
+  padding: 25px;
+  background: #f7f3ed;
+}
+
+.name-box{
+  margin-bottom: 20px;
+}
+
+.name-box h1{
+  font-size: 2.2rem;
+  color: #444;
+}
+
+.name-box p{
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+/* CONTENT SECTIONS */
+.content-section{
+  margin-bottom: 25px;
+}
+
+.content-section h2{
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #c7c2bb;
+  padding-bottom: 6px;
+}
+
+/* TIMELINE */
+.timeline{
+  position: relative;
+  margin-left: 15px;
+  padding-left: 25px;
+  border-left: 3px solid #777;
+}
+
+.timeline-item{
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.dot{
+  position: absolute;
+  left: -36px;
+  top: 5px;
+  width: 14px;
+  height: 14px;
+  background: #777;
+  border-radius: 50%;
+}
+
+.timeline-content{
+  background: #ffffff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+.timeline-content h3{
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+/* SKILLS */
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills li{
+  background: #5a5a5a;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+/* PROJECTS */
+.projects{
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-card{
+  flex: 1;
+  min-width: 180px;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+}
+
+.project-card img{
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  height: auto;
+}
+
+/* CONTACT FORM */
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea{
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button{
+  padding: 10px;
+  background: #5a5a5a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* MOBILE */
+@media (max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel{
+    width: 100%;
+  }
+
+  .profile-box{
+    width: 140px;
+    height: 140px;
+  }
+
+  .name-box h1{
+    font-size: 1.7rem;
+  }
+
+  .projects{
+    flex-direction: column;
+  }
+}
+
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1024px){
+  .left-panel{
+    width: 40%;
+  }
+
+  .right-panel{
+    width: 60%;
+  }
+
+  .name-box h1{
+    font-size: 2rem;
+  }
+}

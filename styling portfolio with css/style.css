@@ -1,0 +1,99 @@
+.header 
+{
+    background-color:black;
+    color:whitesmoke;
+    border: 1px;
+   padding: 1px 2px;
+   height: 80px;
+   margin-top: 5px;
+   
+   
+}
+nav
+{
+    font-size: larger;
+    margin: 5px;
+    display:flex;
+justify-content: space-between;
+}
+
+nav ul li
+{
+    display: inline-block;
+    justify-content: space-between;
+   padding: 1px 10px;
+}
+
+.article
+{
+    background-color:grey;
+    color: whitesmoke;
+}
+.article nav
+{
+    display: flex;
+     justify-content: space-between;
+}
+.article nav ul li
+{
+    display: inline-block;
+    text-align: center;
+}
+/* .box
+{
+    display:flex;
+    background-color: aqua;
+    text-align: center;
+}
+.box
+{
+    display: inline-block;
+    justify-content: space-around;
+}
+.box .current
+{
+    display: flex;
+    text-align: right;
+    padding: 100px;
+} */
+
+.profileCard{
+  width: 500px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  margin: 50px 500px ;
+  background-color: aquamarine;
+}
+
+.profileImg{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.name{
+  margin: 20px 0 10px;
+}
+
+.role{
+  margin: 0 0 15px;
+  color: gray;
+}
+
+.btn{
+  padding: 10px 20px;
+  border: none;
+  background: green;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: darkgreen;
+}
