@@ -1,0 +1,239 @@
+* {
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body {
+
+font-family:Arial;
+line-height:1.6;
+
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:1rem;
+
+background:#008080;
+color:white;
+
+}
+
+.nav-links {
+
+display:flex;
+list-style:none;
+
+}
+
+.nav-links li {
+
+margin-left:1.5rem;
+
+}
+
+.nav-links a {
+
+color:white;
+text-decoration:none;
+
+}
+
+.hamburger {
+
+display:none;
+font-size:2rem;
+cursor:pointer;
+
+}
+
+
+/* HERO */
+
+.hero{
+background:url(https://media.cntraveler.com/photos/5fd26c4ddf72876c320b8001/16:9/w_1920,c_limit/952456172);
+background-size:cover;
+height:90vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+text-align:center;
+
+}
+
+.hero button {
+
+padding:1rem 2rem;
+border:none;
+background:#ff9800;
+color:white;
+
+}
+
+
+/* FEATURES */
+
+.features {
+
+padding:3rem;
+
+text-align:center;
+
+}
+
+.feature-container {
+
+display:flex;
+gap:2rem;
+
+}
+
+.feature {
+
+flex:1;
+background:#f4f4f4;
+padding:2rem;
+
+}
+
+
+/* DESTINATIONS */
+
+.destinations {
+
+padding:3rem;
+text-align:center;
+
+}
+
+.destination-container {
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:2rem;
+
+}
+
+.card img {
+
+width:100%;
+height:200px;
+object-fit:fill;
+
+}
+
+
+/* CONTACT */
+
+.contact {
+
+padding:3rem;
+text-align:center;
+
+}
+
+form {
+
+display:flex;
+flex-direction:column;
+gap:1rem;
+width:50%;
+margin:auto;
+
+}
+
+input, textarea {
+
+padding:1rem;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+background:#008080;
+color:white;
+text-align:center;
+padding:1rem;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+flex-direction:column;
+background:#008080;
+position:absolute;
+top:60px;
+right:0;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+.hamburger{
+
+display:block;
+
+}
+
+.feature-container{
+
+flex-direction:column;
+
+}
+
+.destination-container{
+
+grid-template-columns:1fr;
+
+}
+
+form{
+
+width:90%;
+
+}
+
+}
+
+
+
+/* TABLET */
+
+@media (769px <= width <= 1024px){
+
+.destination-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
