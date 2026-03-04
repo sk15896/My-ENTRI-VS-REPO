@@ -1,0 +1,13 @@
+.hero {
+    height: 100vh;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+}
+
+.hero h1 {
+    font-weight: bold;
+}
+
+section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
