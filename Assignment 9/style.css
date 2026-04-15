@@ -1,0 +1,74 @@
+/* Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+
+  /* Center everything */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+h1 {
+  margin: 20px;
+}
+
+/* Search bar */
+#search {
+  width: 250px;
+  padding: 8px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Inputs */
+input, textarea {
+  width: 250px;
+  padding: 8px;
+  margin: 8px;
+  text-align: center;
+}
+
+/* Button */
+button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Status */
+#status {
+  margin: 10px;
+}
+
+/* Product List */
+#productList {
+  width: 60%;
+}
+
+/* Product Card */
+.product {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+/* Image */
+.product img {
+  width: 80px;
+}
